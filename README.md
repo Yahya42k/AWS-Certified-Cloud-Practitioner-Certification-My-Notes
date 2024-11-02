@@ -36,23 +36,23 @@
 Amazon Web Services (AWS) has established design principles for architecting systems in the cloud, aimed at ensuring they’re secure, scalable, reliable, and cost-effective. Here’s an overview of key AWS design principles in the cloud:
 1. Scalability
 
-    Elasticity: AWS provides services like Auto Scaling and Elastic Load Balancing to automatically increase or decrease resources in response to demand.
+    Elasticity: AWS provides services like Auto Scaling and Elastic Load Balancing to automatically increase or decrease resources in response to demand.  
     Decoupling: Use services like Amazon SQS (Simple Queue Service) or Amazon SNS (Simple Notification Service) to decouple components, enabling each to scale independently.
 
 2. Reliability
 
-    Redundancy: AWS encourages using multiple Availability Zones (AZs) within a region to ensure high availability.
+    Redundancy: AWS encourages using multiple Availability Zones (AZs) within a region to ensure high availability.  
     Automated Recovery: Utilize features like AWS CloudWatch for monitoring, and set up automatic recovery through tools like AWS Lambda for error handling.
 
 3. Security
 
     Shared Responsibility Model: Security in the cloud is split between AWS and the customer. AWS secures the infrastructure, while users are responsible for securing their applications and data.
-    Identity and Access Management (IAM): Use AWS IAM to control access to resources, following the principle of least privilege.
+    Identity and Access Management (IAM): Use AWS IAM to control access to resources, following the principle of least privilege.  
     Encryption and Data Protection: Encrypt sensitive data both in transit and at rest, using AWS KMS (Key Management Service) and S3 encryption.
 
 4. Performance Efficiency
 
-    Optimized Computing Resources: Use different AWS instance types and sizes that best fit the workload, with services like Amazon EC2 and AWS Lambda.
+    Optimized Computing Resources: Use different AWS instance types and sizes that best fit the workload, with services like Amazon EC2 and AWS Lambda.  
     Global Reach: Leverage AWS's global infrastructure, including Content Delivery Network (CDN) with Amazon CloudFront, to reduce latency by caching content closer to end-users.
 
 5. Cost Optimization
@@ -63,7 +63,7 @@ Amazon Web Services (AWS) has established design principles for architecting sys
 
 6. Operational Excellence
 
-    Monitoring and Logging: Use tools like AWS CloudWatch and AWS CloudTrail to monitor system performance, log activities, and perform root-cause analysis.
+    Monitoring and Logging: Use tools like AWS CloudWatch and AWS CloudTrail to monitor system performance, log activities, and perform root-cause analysis.  
     Infrastructure as Code (IaC): Employ IaC tools like AWS CloudFormation and AWS CDK (Cloud Development Kit) to automate infrastructure management, allowing for repeatable and auditable changes.
 
 These principles collectively help teams build resilient, scalable, and cost-effective applications on AWS that can adjust to dynamic business needs while remaining secure and high-performing.
