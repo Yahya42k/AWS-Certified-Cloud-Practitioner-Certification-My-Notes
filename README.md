@@ -118,6 +118,68 @@ An *instance store* provides temporary block-level storage for your instance. 
 
 
 ## Amazon EC2 Pricing
+Amazon EC2 (Elastic Compute Cloud) pricing is designed to be flexible, allowing users to choose from several options based on their needs and workload patterns. Here’s an overview of the key pricing models for Amazon EC2:
+1. On-Demand Instances
+
+    Description: Pay for compute capacity by the hour or second, depending on the instance type, with no long-term commitments.  
+    Best For:
+        Users who need the flexibility to scale up or down quickly.  
+        Applications with unpredictable workloads that cannot be interrupted.  
+    Benefits:
+        No upfront payments; pay only for what you use.  
+        Ideal for short-term projects or applications with variable workloads.  
+
+2. Reserved Instances (RIs)
+
+    Description: Purchase a reserved capacity for a specified period (one year or three years), offering significant discounts compared to on-demand pricing.  
+    Types of RIs:
+        Standard RIs: Offer the highest savings (up to 75%) for applications with steady-state usage.  
+        Convertible RIs: Allow you to change the instance type and family during the term, offering flexibility at a lower discount (up to 54%).  
+        Scheduled RIs: Available to launch within the time windows you reserve, useful for workloads that only run at specific times.  
+    Best For:
+        Steady-state applications with predictable workloads.  
+    Benefits:
+        Cost savings over long-term usage.  
+        Improved budgeting predictability.  
+
+3. Spot Instances
+
+    Description: Bid for unused EC2 capacity at potentially significant discounts (up to 90%) compared to on-demand prices. AWS can terminate these instances if capacity is needed for on-demand instances. 
+    Best For:
+        Applications with flexible start and end times or that can be interrupted, like batch processing jobs.  
+    Benefits:
+        Lower costs for workloads that are fault-tolerant and can tolerate interruptions.  
+        Good for big data analysis, rendering, and other time-insensitive tasks.  
+
+4. Savings Plans
+
+    Description: Flexible pricing model that provides significant savings (up to 72%) on your AWS usage in exchange for a commitment to use a specific amount of resources (measured in dollars per hour) for a one or three-year term.   
+    Types of Savings Plans:
+        Compute Savings Plans: Apply to any EC2 instance regardless of region, instance family, operating system, or tenancy.  
+        EC2 Instance Savings Plans: Apply to specific instance families within a region.  
+    Best For:
+        Users who have predictable workloads but want more flexibility than Reserved Instances.  
+    Benefits:
+        Flexibility to change instance types or regions while still benefiting from discounts.  
+
+5. Dedicated Hosts
+
+    Description: Physical servers dedicated to your use, allowing you to run your EC2 instances on physical hardware that is not shared with other customers.  
+    Best For:
+        Applications that require server-bound licenses or need compliance with regulatory requirements.  
+    Benefits:
+        Control over instance placement and visibility into the underlying hardware.  
+
+Additional Pricing Considerations
+
+Data Transfer Costs: Charges apply for data transferred out of AWS to the internet or other AWS regions.  
+EBS Volumes: Pricing also applies for Elastic Block Store volumes, snapshots, and data transfer.  
+Elastic IP Addresses: You are charged for Elastic IP addresses that are not associated with running instances.  
+Load Balancing: Using AWS Elastic Load Balancing incurs additional charges based on the number of Load Balancers and the amount of data processed.  
+
+Pricing Calculator
+
+AWS provides a Pricing Calculator to help estimate the costs of running various EC2 configurations based on selected instance types, regions, and other parameters.
 
 ### On-Demand
 
