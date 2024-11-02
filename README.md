@@ -109,6 +109,9 @@ Block Storage
 
 Summary: Object storage (e.g., S3) is suited for scalable, durable storage of unstructured data, while block storage (e.g., EBS) is designed for high-performance needs, offering fast access to structured data.
 
+EC2 Instance Store: Temporary, high-speed storage that is erased when the instance stops. Best for temporary data like caches or processing buffers.  
+Amazon EBS: Persistent, reliable storage that can survive instance restarts, suitable for applications that require durable storage, such as databases and critical applications.  
+
 ## AWS EC2 Instance Store
 
 An *instance store* provides temporary block-level storage for your instance. This storage is located on disks that are physically attached to the host computer. Instance store is ideal for temporary storage of information that changes frequently, such as buffers, caches, scratch data, and other temporary content. It can also be used to store temporary data that you replicate across a fleet of instances, such as a load-balanced pool of web servers.
