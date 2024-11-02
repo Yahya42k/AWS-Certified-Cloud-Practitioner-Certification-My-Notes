@@ -93,6 +93,21 @@ These principles collectively help teams build resilient, scalable, and cost-eff
     - High sequential read/write access.
     - Great for distributed file systems and data warehousing.
 
+Object Storage
+
+    Definition: Object storage organizes data as individual units called "objects," each containing the data itself, metadata, and a unique identifier. These objects are stored in a flat system (buckets), making them easy      to scale and manage.  
+    Access: Accessed over HTTP/REST APIs, making it ideal for use with web-based applications.  
+    Best For: Storing large amounts of unstructured data, such as images, videos, backups, logs, and big data.  
+    AWS Example: Amazon S3, which offers durability and scalability across regions, with cost-effective storage for high data volumes.  
+
+Block Storage
+
+    Definition: Block storage splits data into fixed-sized blocks, which can be stored, accessed, and managed independently. Each block acts as a separate unit of data, similar to a physical hard drive.  
+    Access: Accessed directly through OS-level protocols like iSCSI, allowing applications to quickly read and write data.  
+    Best For: Structured data and applications requiring high performance and low latency, such as databases, operating systems, and transactional applications.  
+    AWS Example: Amazon EBS, providing persistent storage volumes that can be attached to Amazon EC2 instances for fast, reliable data access.  
+
+Summary: Object storage (e.g., S3) is suited for scalable, durable storage of unstructured data, while block storage (e.g., EBS) is designed for high-performance needs, offering fast access to structured data.
 
 ## AWS EC2 Instance Store
 
